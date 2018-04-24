@@ -1,16 +1,29 @@
 {
-  "name": "crypto-address-checker",
+  "name": "coin-address-validator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "To validate crypto currency's wallet address",
+  "main": "dist/coin-address-validator.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.js --hot --host 0.0.0.0",
     "build": "NODE_ENV=production webpack -p --config webpack.config.js",
     "lint": "eslint src/**/*.js || true"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "bitcoin",
+    "crypto currency",
+    "ethereum",
+    "wallet address"
+  ],
+  "author": "wonism",
+  "homepage": "https://github.com/wonism/coin-address-validator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonism/coin-address-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wonism/coin-address-validator/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
@@ -21,6 +34,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.11.0",
+    "husky": "^1.0.0-rc.2",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
@@ -30,5 +44,10 @@
     "babel-polyfill": "^6.26.0",
     "js-sha3": "^0.7.0",
     "jssha": "^2.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }

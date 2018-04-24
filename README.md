@@ -1,4 +1,4 @@
-# Crypto Address Checker
+# Coin Address Validator
 
 > To validate crypto currency's wallet address on Node.js and Browser even React Native.
 > And It has no dependencies with Node.js core modules.
@@ -7,12 +7,12 @@ This project was created with reference to [wallet-address-validator](https://gi
 
 ## How to use
 ```js
-import cryptoAddressChecker from 'crypto-address-checker';
+import coinAddressValidator from 'coin-address-validator';
 
-const isBtcAddress  = cryptoAddressChecker.validate('1Gz3SRHzmzV8NwhUe5LQkTy5ysH1aqevAP', 'btc', 'prod');
-const isEthAddress = cryptoAddressChecker.validate('0x9e093a64da766c6f1400158db028cc9946b8ae1f', 'eth', 'prod');
-const isXrpAddress = cryptoAddressChecker.validate('rh5yrZSwXTAXdiHyc7xiyZ95FdjsfYWmSY', 'xrp', 'prod');
-const isLtcAddress = cryptoAddressChecker.validate('LRitYWYuMvnJyrms4jVTiAj5rcTVomHvPx', 'ltc', 'prod');
+const isBtcAddress  = coinAddressValidator.validate('1Gz3SRHzmzV8NwhUe5LQkTy5ysH1aqevAP', 'btc', 'prod');
+const isEthAddress = coinAddressValidator.validate('0x9e093a64da766c6f1400158db028cc9946b8ae1f', 'eth', 'prod');
+const isXrpAddress = coinAddressValidator.validate('rh5yrZSwXTAXdiHyc7xiyZ95FdjsfYWmSY', 'xrp', 'prod');
+const isLtcAddress = coinAddressValidator.validate('LRitYWYuMvnJyrms4jVTiAj5rcTVomHvPx', 'ltc', 'prod');
 ```
 
 ### Methods

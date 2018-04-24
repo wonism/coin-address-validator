@@ -8,7 +8,7 @@ const DEFAULT_NETWORK_TYPE = 'prod';
 const PRODUCTION = 'prod';
 const TEST = 'testnet';
 
-const cryptoAddressChecker = {
+const coinAddressValidator = {
   getAddressType: (address) => {
     const decoded = decode(address);
     const { length } = decoded;
@@ -30,7 +30,7 @@ const cryptoAddressChecker = {
       return currency.validator.isValidAddress(address);
     }
 
-    const addressType = cryptoAddressChecker.getAddressType(address);
+    const addressType = coinAddressValidator.getAddressType(address);
     const correctAddressTypes = (networkType === PRODUCTION || networkType === TEST) ? (
       currency.addressTypes[networkType]
     ) : (
@@ -41,4 +41,4 @@ const cryptoAddressChecker = {
   },
 };
 
-export default cryptoAddressChecker;
+export default coinAddressValidator;

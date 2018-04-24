@@ -37,7 +37,7 @@ const optimization = isProduction ? {
 const config = {
   mode: isProduction ? 'production' : 'development',
   entry: {
-    "crypto-address-checker": path.resolve(__dirname, isProduction ? 'src' : 'demo', 'index.js'),
+    "coin-address-validator": path.resolve(__dirname, isProduction ? 'src' : 'demo', 'index.js'),
   },
   optimization,
   output: {
