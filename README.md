@@ -52,6 +52,7 @@ type of return value is string (if valid base58 addrses) or null
 * Komodo/KMD, `'komodo'` or `'KMD'`
 * Litecoin/LTC, `'litecoin'` or `'LTC'`
 * Megacoin/MEC, `'megacoin'` or `'MEC'`
+* Monero/XMR, `'monero'` or `'XMR'`
 * Namecoin/NMC, `'namecoin'` or `'NMC'`
 * NEO/NEO, `'NEO'` or `'NEO'`
 * NeoGas/GAS, `'neogas'` or `'GAS'`

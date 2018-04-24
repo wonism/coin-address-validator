@@ -1,5 +1,6 @@
 import ethValidator from '../validator/eth';
 import xrpValidator from '../validator/xrp';
+import xmrValidator from '../validator/xmr';
 
 const CURRENCIES = [{
   name: 'bitcoin',
@@ -155,6 +156,10 @@ const CURRENCIES = [{
   name: 'qtum',
   symbol: 'qtum',
   addressTypes: { prod: ['3a', '32'], testnet: ['6f', 'c4'] },
+}, {
+  name: 'monero',
+  symbol: 'xmr',
+  validator: xmrValidator,
 }];
 
 const currencies = {
