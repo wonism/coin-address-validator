@@ -36,14 +36,14 @@ const optimization = isProduction ? {
 
 const config = {
   mode: isProduction ? 'production' : 'development',
-  entry: {
-    "coin-address-validator": path.resolve(__dirname, isProduction ? 'src' : 'demo', 'index.js'),
-  },
+  entry: path.resolve(__dirname, isProduction ? 'src' : 'demo', 'index.js'),
   optimization,
   output: {
-    filename: '[name].js',
+    filename: 'crypto-address-checker.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
+    libraryTarget: 'umd',
+    globalObject: 'this',
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'demo'),
