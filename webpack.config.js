@@ -30,7 +30,12 @@ const plugins = [
 
 const optimization = isProduction ? {
   minimizer: [
-    new UglifyWebpackPlugin({ sourceMap: false }),
+    new UglifyWebpackPlugin({
+      sourceMap: false,
+      extractComments: {
+        banner: false
+      },
+    }),
   ],
 } : {};
 
@@ -39,7 +44,7 @@ const config = {
   entry: path.resolve(__dirname, isProduction ? 'src' : 'demo', 'index.js'),
   optimization,
   output: {
-    filename: 'crypto-address-checker.js',
+    filename: 'coin-address-validator.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     libraryTarget: 'umd',
