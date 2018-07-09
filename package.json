@@ -1,6 +1,6 @@
 {
   "name": "coin-address-validator",
-  "version": "1.0.4",
+  "version": "1.0.4-1",
   "description": "To validate crypto currency's wallet address",
   "main": "dist/coin-address-validator.js",
   "scripts": {
