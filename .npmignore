@@ -27,3 +27,8 @@ bower_components/
 
 .tmp
 .sass-cache
+
+# sources
+src/
+demo/
+webpack.config.js
